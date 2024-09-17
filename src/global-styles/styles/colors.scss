@@ -1,0 +1,18 @@
+:root {
+// Jasny motyw
+    --light-background: #F5F5F5 // Tło(bardzo jasny szary)
+    --light-main: #3498DB // Główny, akcentowy(niebieski, np. na przyciski, linki)
+    --light-headlines: #2C3E50 // tekst nagłowki(ciemny granat)
+    --light-text: #4F4F4F // treść(ciemnoszary)
+    --light-incomes: #27AE60 // przychody(zielony)
+    --light-expenses: #E74C3C // wydatki(czerwony)
+    --light-hover: #2980B9 // przyciski hover(ciemniejszy niebieski)
+// Ciemny motyw
+    --dark-background: #2C3E50 // Tło(ciemny granat)
+    --dark-main: #3498DB // Główny, akcentowy(ten sam niebieski, kontrastowy)
+    --dark-headlines: #ECF0F1 // tekst nagłowki(jasnoszary)
+    --dark-text: #BDC3C7 // treść(jaśniejszy szary)
+    --dark-incomes: #2ECC71 // przychody(jasnozielony)
+    --dark-expenses: #E74C3C // wydatki(ten sam czerwony)
+    --dark-hover: #2980B9 // przyciski hover(ten sam ciemniejszy niebieski)
+}
