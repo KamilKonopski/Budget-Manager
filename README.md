@@ -1,5 +1,11 @@
 # React + TypeScript + Vite
 
+The project aims to create a budget management tool
+personal, which allows you to track expenses and categorize transactions
+and generating reports. The application uses modern technologies
+frontend, ensuring fast loading time and responsive interface
+user
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
