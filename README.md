@@ -1,56 +1,77 @@
-# React + TypeScript + Vite
+# Budget Manager
 
-The project aims to create a budget management tool
-personal, which allows you to track expenses and categorize transactions
-and generating reports. The application uses modern technologies
-frontend, ensuring fast loading time and responsive interface
-user
+## 🚀 About the Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Budget Manager** is a web application designed to help users manage their personal finances efficiently. The application provides insights into income and expenses, allowing users to track transactions, generate reports, and analyze their financial situation. The project is currently under development.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Frontend**: React, TypeScript, TailwindCSS
 
-## Expanding the ESLint configuration
+**State Management**: Redux
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Backend**: Firebase
 
-- Configure the top-level `parserOptions` property like this:
+**Database**: Firestore
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📌 Features (Planned)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+✅ **User Authentication**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Sign up, login, and logout functionality
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Secure authentication (JWT or Firebase Auth)
+
+Profile management
+
+✅ **Dashboard**
+
+Overview of total balance, income, and expenses
+
+Recent transactions summary
+
+Monthly financial summary with charts
+
+✅ **Transactions Management**
+
+Add, edit, and delete transactions
+
+Categorize transactions (Food, Rent, Salary, etc.)
+
+Filter and search transactions
+
+✅ **Reports & Analytics**
+
+Visual representation of spending and earnings
+
+Graphs showing trends over time
+
+Export data to CSV or PDF
+
+✅ **Settings**
+
+Customize currency, theme (light/dark mode)
+
+Manage categories and budgets
+
+✅ **Responsive Design**
+
+Fully optimized for desktop, tablet, and mobile devices
+
+## 🎨 UI/UX Design
+
+Dark theme for better readability
+
+Modern and intuitive user interface
+
+Smooth animations and transitions
+
+## 🔗 Links
+
+**GitHub Repository**: [[github.com/KamilKonopski/Budget-Manager](https://github.com/KamilKonopski/Budget-Manager)]
+
+**Live Demo**: [Insert Link Here] (Once available)
+
+** 📌 Notes
+
+This README will be updated as development progresses. Stay tuned for more updates!
