@@ -1,23 +1,15 @@
-import Menu from "../Menu/Menu";
-
 import avatar from "../../assets/avatar.png";
-import logo from "../../assets/logo.png";
+// import burgerMenu from "../../assets/menu.png";
 
 const Header = () => {
   return (
-    <header>
+    <header className="flex justify-between p-[20px] col-span-2">
       <div>
-        <img src={logo} alt="logo budget manager app" />
-        <span>Budget Manager</span>
+        <h1 className="text-headlines text-[40px] ">Budget Manager</h1>
       </div>
-      <Menu />
-      <div>
-        <button>🌓</button>
-        <img src={avatar} alt="avatar profilu" />
-        <div>
-          <button>Profil</button>
-          <button>Ustawienia</button>
-          <button>Wyloguj</button>
+      <div className="flex gap-[20px] items-center">
+        <div className="size-[40px] cursor-pointer">
+          <img src={avatar} alt="avatar profilu" />
         </div>
       </div>
     </header>
