@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="justify-center flex my-2.5 col-span-2">
+    <footer className="bg-aside justify-center flex py-2.5 col-span-2">
       <span className="text-[18px]">
         Created by{" "}
         <a
