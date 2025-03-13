@@ -4,15 +4,17 @@
 
 @layer base {
   :root {
-    --color-background: #121212;
-    --color-main: #3498db;
-    --color-headlines: #ffc107;
-    --color-text: #e0e0e0;
+    --color-background: #282a36;
+    --color-aside: #1e1e2e;
+    --color-headlines: #a855f7;
+    --color-text: #eaeaea;
     --color-incomes: #00c853;
     --color-expenses: #e53935;
-    --color-hover: #bdbdbd;
-    --color-active: #292929;
-    --color-interactive: #1db954;
+    --color-hover: #8b5cf6;
+    --color-active: #a855f7;
+    --color-card: #6b21a8;
+    --color-active-bg: rgba(42, 45, 64, 0.85);
+    --font-roboto: "Roboto", sans-serif;
   }
 
   /* @media (prefers-color-scheme: dark) {
@@ -50,7 +52,7 @@
 
 @theme {
   --color-background: var(--color-background);
-  --color-main: var(--color-main);
+  --color-aside: var(--color-aside);
   --color-headlines: var(--color-headlines);
   --color-text: var(--color-text);
   --color-incomes: var(--color-incomes);
@@ -58,5 +60,27 @@
   --color-hover: var(--color-hover);
   --color-active: var(--color-active);
   --color-interactive: var(--color-interactive);
-  --font-roboto: Roboto, sans-serif;
+  --color-active-bg: var(--color-active-bg);
+  --font-roboto: var(--font-roboto);
+}
+
+.nav-icon {
+  filter: invert(99%) sepia(7%) saturate(17%) hue-rotate(329deg)
+    brightness(115%) contrast(84%);
+}
+
+a:hover .nav-icon {
+  filter: invert(34%) sepia(33%) saturate(4119%) hue-rotate(240deg)
+    brightness(105%) contrast(93%);
+}
+
+.active {
+  background-color: var(--color-active-bg);
+  color: var(--color-active);
+  border-radius: 3px;
+}
+
+.active > .nav-icon {
+  filter: invert(37%) sepia(67%) saturate(1262%) hue-rotate(242deg)
+    brightness(98%) contrast(99%);
 }
