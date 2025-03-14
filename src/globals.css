@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --color-background: #282a36;
-    --color-aside: #1e1e2e;
+    --color-background: #1e1e2e;
+    --color-aside: #282a36;
     --color-headlines: #a855f7;
     --color-text: #eaeaea;
     --color-incomes: #00c853;
@@ -15,6 +15,8 @@
     --color-card: #6b21a8;
     --color-active-bg: rgba(42, 45, 64, 0.85);
     --font-roboto: "Roboto", sans-serif;
+    --shadow-input-hover: 0px 0px 0px 2px var(--color-hover);
+    --shadow-input-active: 0px 0px 0px 2px var(--color-active);
   }
 
   /* @media (prefers-color-scheme: dark) {
@@ -59,17 +61,25 @@
   --color-expenses: var(--color-expenses);
   --color-hover: var(--color-hover);
   --color-active: var(--color-active);
+  --color-card: var(--color-card);
   --color-interactive: var(--color-interactive);
   --color-active-bg: var(--color-active-bg);
   --font-roboto: var(--font-roboto);
+  --shadow-input-hover: var(--shadow-input-hover);
+  --shadow-input-active: var(--shadow-input-active);
 }
 
-.nav-icon {
+.icon {
   filter: invert(99%) sepia(7%) saturate(17%) hue-rotate(329deg)
     brightness(115%) contrast(84%);
 }
 
-a:hover .nav-icon {
+a:hover .icon {
+  filter: invert(34%) sepia(33%) saturate(4119%) hue-rotate(240deg)
+    brightness(105%) contrast(93%);
+}
+
+button:hover .icon {
   filter: invert(34%) sepia(33%) saturate(4119%) hue-rotate(240deg)
     brightness(105%) contrast(93%);
 }
@@ -80,7 +90,53 @@ a:hover .nav-icon {
   border-radius: 3px;
 }
 
-.active > .nav-icon {
+.active > .icon {
   filter: invert(37%) sepia(67%) saturate(1262%) hue-rotate(242deg)
     brightness(98%) contrast(99%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay .modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  padding: 40px 0;
+  background-color: var(--color-aside);
+  z-index: 100;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+@media (max-width: 1280px) {
+  .overlay .modal {
+    width: 40%;
+  }
+}
+
+@media (max-width: 820px) {
+  .overlay .modal {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .overlay .modal {
+    width: 80%;
+  }
 }
