@@ -42,8 +42,14 @@ const LoginModal = ({ openSignupModal }: LoginModalProps) => {
 
   return (
     <>
-      <form className="w-full flex flex-col gap-2.5" onSubmit={handleLogin}>
-        <div className="flex flex-col mx-10">
+      <h2 className="text-[28px] font-bold mb-5 max-2xl:text-[24px]">
+        Log in to Budget Manager
+      </h2>
+      <form
+        className="w-full flex flex-col gap-2.5 px-10"
+        onSubmit={handleLogin}
+      >
+        <div className="flex flex-col">
           <label className="text-[14px] font-bold" htmlFor="email">
             Email
           </label>
@@ -58,7 +64,7 @@ const LoginModal = ({ openSignupModal }: LoginModalProps) => {
             required
           />
         </div>
-        <div className="flex flex-col mx-10">
+        <div className="flex flex-col">
           <label className="text-[14px] font-bold" htmlFor="password">
             Password
           </label>
@@ -75,13 +81,13 @@ const LoginModal = ({ openSignupModal }: LoginModalProps) => {
         <button
           type="submit"
           disabled={isDisabled}
-          className="text-[14px] font-bold bg-active py-1 rounded-[3px] mx-10 mt-4 cursor-pointer duration-250 hover:bg-hover disabled:bg-background disabled:cursor-not-allowed"
+          className="text-[14px] font-bold bg-active py-1 rounded-[3px] mt-4 cursor-pointer duration-250 hover:bg-hover disabled:bg-background disabled:cursor-not-allowed"
         >
           Log in
         </button>
       </form>
       <button
-        className="cursor-pointer py-2 px-12 rounded-[3px] duration-250 hover:bg-hover"
+        className="text-[14px] cursor-pointer py-2 px-12 mt-2 rounded-[3px] duration-250 hover:bg-hover"
         onClick={() => openSignupModal(true)}
       >
         Don't have an account? Sign up!
