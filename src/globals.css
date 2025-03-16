@@ -6,13 +6,13 @@
   :root {
     --color-background: #1e1e2e;
     --color-aside: #282a36;
-    --color-headlines: #a855f7;
+    --color-headlines: #6b21a8;
     --color-text: #eaeaea;
     --color-incomes: #00c853;
     --color-expenses: #e53935;
     --color-hover: #8b5cf6;
     --color-active: #a855f7;
-    --color-card: #6b21a8;
+    --color-card: #a855f7;
     --color-active-bg: rgba(42, 45, 64, 0.85);
     --font-roboto: "Roboto", sans-serif;
     --shadow-input-hover: 0px 0px 0px 2px var(--color-hover);
