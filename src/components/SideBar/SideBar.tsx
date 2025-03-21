@@ -7,6 +7,7 @@ import transactionIcon from "../../assets/transaction.png";
 import raportIcon from "../../assets/raport.png";
 import loginIcon from "../../assets/login.png";
 import signUpIcon from "../../assets/signup.png";
+import settingsIcon from "../../assets/settings.png";
 
 type SideBarProps = {
   isLogin: React.Dispatch<React.SetStateAction<boolean>>;
@@ -69,6 +70,22 @@ const SideBar = ({ isLogin, isSignup }: SideBarProps) => {
             width={20}
           />
           <span className="max-md:hidden">Raports</span>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "active flex gap-2.5 items-center py-2.5 pl-2 pr-30 transition-all duration-100 hover:text-hover hover:bg-active-bg max-md:p-0"
+              : "flex gap-2.5 items-center py-2.5 pl-2 pr-30 transition-all duration-100 hover:text-hover hover:bg-active-bg max-md:p-0"
+          }
+          to={"/settings"}
+        >
+          <img
+            className="icon"
+            src={settingsIcon}
+            alt="settings view icon"
+            width={20}
+          />
+          <span className="max-md:hidden">Settings</span>
         </NavLink>
       </nav>
       <div className="flex flex-col gap-6 mb-12 items-center max-md:flex-row max-md:mb-0 max-md:mr-5">
