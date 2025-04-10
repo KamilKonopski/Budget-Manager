@@ -8,7 +8,7 @@ const Footer = () => {
           target="_blank"
           href="https://github.com/KamilKonopski"
         >
-          Kamil Konopski 2025
+          Kamil Konopski
         </a>
       </span>
     </footer>
