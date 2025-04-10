@@ -70,7 +70,7 @@ Smooth animations and transitions
 
 **GitHub Repository**: [[github.com/KamilKonopski/Budget-Manager](https://github.com/KamilKonopski/Budget-Manager)]
 
-**Live Demo**: [Insert Link Here] (Once available soon)
+**Live Demo**: [Insert Link Here] (Once available)
 
 ** 📌 Notes
 
